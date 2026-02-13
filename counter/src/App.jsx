@@ -38,10 +38,7 @@ const removevalue = ()=>{
 }
 const resetvalue=()=>{
 setcounter(0)
-
-  
 }
-
 
  return (
     <>
