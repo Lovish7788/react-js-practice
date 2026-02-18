@@ -29,8 +29,9 @@ passwordgenrator()
   },[ length,checkchar, checknum, passwordgenrator])
 
 const copyPasswordToClip = useCallback(()=>{
+  
   passwordRef.current?.select();
-  passwordRef.current?.setSelectionRange(0,6)
+  // passwordRef.current?.setSelectionRange(0,6) // select value in specific range
   window.navigator.clipboard.writeText(password)
 },[password])
   // passwordgenrator() we cant use this 
